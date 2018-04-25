@@ -1,0 +1,44 @@
+body{
+   background-image: url("img/log in.jpeg");
+   background-repeat: no-repeat;
+   border-radius: 50%;
+   margin-left: 500px;
+   margin-top: 200px;
+  background-size: 1400px;
+
+}
+
+.card{
+   background-color: gray;
+   margin:auto;
+   padding-left: 20px;
+   padding-bottom:20px;
+}
+.p{
+   font-family: "Courier New", Courier, monospace;
+   font-size: 15px;
+}
+.heading{
+   letter-spacing: 5px;
+   color: #130f40 ;
+   text-align: center;
+}
+.sub_heading{
+   letter-spacing: 3px;
+   color: #130f40 ; 
+   text-align: center;
+}
+.tags{
+   display: inline-block;
+   padding: 0.25em 0.4em;
+   text-align: center;
+   white-space: normal;
+   vertical-align: baseline;
+   border-radius: 0;
+}
+img{
+
+   width: 230px;
+   height: auto;
+   float: center;
+}

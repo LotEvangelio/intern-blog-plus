@@ -1,0 +1,48 @@
+.card{
+   background-color: blue;
+   margin:auto;
+   transition: 0.3s;
+   border-radius: 10px;
+   padding-left: 20px;
+   padding-bottom:20px;
+}
+.p{
+   font-family: "Courier New", Courier, monospace;
+   font-size: 15px;
+}
+.heading{
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #192a56
+;
+   font-weight: 400;
+   line-height: 1.4em;
+   text-align: center;
+   margin-bottom: 0px;
+}
+.sub_heading{
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   color: #57606f
+;
+   font-weight: 400;
+   line-height: 1.4em;
+   text-align: center;
+   margin-bottom: 0px;
+}
+.tags{
+   display: inline-block;
+   padding: 0.25em 0.4em;
+   font-size: 75%;
+   font-weight: 700;
+   line-height: 1;
+   text-align: center;
+   white-space: normal;
+   vertical-align: baseline;
+   border-radius: 0;
+}
+img{
+   width: 240px;
+   height: auto;
+   float: center;
+}
