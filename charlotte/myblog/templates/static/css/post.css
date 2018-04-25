@@ -1,18 +1,20 @@
 body{
   background: url("img/log out.jpg");
   background-repeat: no-repeat;
-  background-size: 1400px;
+  background-size: 1800px;
 }
 h2{
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   color: gold;
+  margin-left:280px;
 }
 
 h1{
-  text-align: center;
+  text-align: left;
   font-size: 30px;
   color: gold;
+  margin-left:240px;
 }
 
 .card{
@@ -65,5 +67,5 @@ a{
   text-align: middle;
   margin-left:280px;
   font-size: 20px;
-  color: white;
+  color: gold;
 }

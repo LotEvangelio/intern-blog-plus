@@ -3,11 +3,11 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/post.css' %}" />
 
 {% block content %}
- <h1>Lotty's Blog</h1>
+ <h1>Photo Blog</h1>
  <h2>Post Lists</h2>
   {% if object_list %}
-   {% for post in object_list %}
-    <p>Title: {{ post.title }}</p>
+  {% for post in object_list %}
+   <p>Title: {{ post.title }}</p>
      <p>Sub Title: {{ post.sub_Title }}</p>
       <img src="{{ post.banner_Photo.url }}">
        <br>
