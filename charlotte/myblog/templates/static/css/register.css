@@ -1,10 +1,15 @@
+body{
+  background-color: #130f40;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  margin-top: 60px;
+}
 .card{
-   background-color: blue;
-   margin:auto;
-   transition: 0.3s;
-   border-radius: 10px;
-   padding-left: 20px;
-   padding-bottom:20px;
+   border-radius: 5px;
+   padding-left: 15px;
+   padding-bottom:15px;
+   max-width: 15px;
+
 }
 .p{
    font-family: "Courier New", Courier, monospace;
@@ -45,4 +50,18 @@ img{
    width: 240px;
    height: auto;
    float: center;
+}
+.helptext{
+   font-size: 0px;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+  color: gold;
+}
+h2{
+  text-align: center;
+  font-size: 20px;
+  color: gold; 
 }

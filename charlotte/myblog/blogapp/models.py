@@ -6,11 +6,7 @@ from django.urls import reverse
 User = settings.AUTH_USER_MODEL
 
 # Create your models here
-POST_STATUS = (
-    ('published', 'Published'),
-    ('draft', 'Draft'),
-    ('hidden', 'Hidden'),
-)
+POST_STATUS = (('published', 'Published'),('draft', 'Draft'),('hidden', 'Hidden'),)
 
 class Index(models.Model):
     heading = models.CharField(max_length=150)
@@ -54,6 +50,9 @@ class Comment(models.Model):
     content = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
 
-
     def __str__(self):
-        return '{}'.format(self.post)
+        return self.text
+
+    def approve(self):
+        self.approved_comment = True
+        self.save()

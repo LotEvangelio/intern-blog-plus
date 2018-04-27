@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <body>
         <div class="card">
-            {% block content %}
-               <h2 class="class"> Sign up</h2>
-                <form method="post">
+                    {% block content %}
+             <h2 class="class"> Sign up</h2>
+            <form method="post">
                     {% csrf_token %}
                     {{ form.as_p }}</br>
-                    <button type="submit">Sign up</button>
-                </form>
+             <button type="submit">Sign up</button>
+            </form>
         </div>
     </body>
 </html>

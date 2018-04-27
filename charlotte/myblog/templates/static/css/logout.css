@@ -1,0 +1,13 @@
+body{
+  background-image: url("img/logout.jpg");
+  background-size: 1400px;
+  background-repeat: no-repeat;
+  margin-left: 650px;
+  margin-top: 380px;
+}
+a{
+    text-align: left;
+  	margin-left:6px;
+  	font-size: 16px;
+  	color: black;
+}

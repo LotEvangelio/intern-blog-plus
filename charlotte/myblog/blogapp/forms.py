@@ -1,8 +1,8 @@
-from django.contrib import admin
-from .models import Post, Index, Category, Tag, Comment
-# Register your models here.
-admin.site.register(Post)
-admin.site.register(Index)
-admin.site.register(Category)
-admin.site.register(Tag)
-admin.site.register(Comment)
+from django import forms
+from .models import Post, Comment
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model= Comment
+        exclude = ('post', 'author',)
+        fields = ('post','content','author')

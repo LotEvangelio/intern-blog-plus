@@ -1,7 +1,7 @@
 {% load static %}
-<!DOCTYPE html>
-<html>
-    {% block content %}
+{% block content %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}" />
     {% if form.errors %}
  <p>Your username and password didn't match. Please try again.</p>
     {% endif %}
@@ -13,11 +13,13 @@
  <p>Please login to see this page.</p>
      {% endif %}
      {% endif %}
+     
     <form method="post" action="{% url 'login' %}">
      {% csrf_token %}
-     <div>
+    
          <td>{{ form.username.label_tag }}</td>
          <td>{{ form.username }}</td>
+         
      </div>
 
      <div>
@@ -30,6 +32,7 @@
          <input type="hidden" name="next" value="{{ next }}" />
      </div>
     </form>
+</div>
    {# Assumes you setup the password_reset view in your URLconf #}
     <p><a href="{% url 'password_reset' %}">Forgot password?</a></p>
    {% endblock %}
